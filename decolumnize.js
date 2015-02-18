@@ -1,7 +1,5 @@
 javascript:(function(){
-    var labels = [],
-
-    _init = function () {
+    var _init = function () {
         _createToolBar();
         _events();
     },
