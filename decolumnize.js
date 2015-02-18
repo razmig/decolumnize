@@ -5,9 +5,10 @@ javascript:(function(){
     },
 
     _createToolBar = function () {
-        var $title = '<h2 style="color:#fff; margin-bottom:10px;margin-top:0;">Show/hide Jira columns</h2>';
-            $bar_container = $('<div id="decolumnize_bar"><div>');
-            $jira_id = $('[data-id]');
+        var $title = '<h2 style="color:#fff; margin-bottom:10px;margin-top:0;">Show/hide Jira columns</h2>',
+            $bar_container = $('<div id="decolumnize_bar"><div>'),
+            $jira_id = $('[data-id]'),
+            $jira_columns_header = $('#ghx-column-header-group');
 
         $bar_container.append($title);
 
@@ -23,6 +24,7 @@ javascript:(function(){
             'color': '#fff'
         });
 
+        $jira_columns_header.css('top', '212px');
         $('body').prepend($bar_container);
     },
 
