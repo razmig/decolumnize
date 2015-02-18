@@ -1,5 +1,9 @@
 javascript:(function(){
     var _init = function () {
+        if ($('#decolumnize_bar').length) {
+            return;
+        }
+
         _createToolBar();
         _events();
     },
