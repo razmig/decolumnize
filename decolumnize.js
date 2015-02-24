@@ -25,7 +25,7 @@ javascript:(function(){
             'color': '#fff'
         });
 
-        $jira_columns_header.css('top', '212px');
+        $jira_columns_header.css('top', '172px');
         $('body').prepend($bar_container);
     },
 
