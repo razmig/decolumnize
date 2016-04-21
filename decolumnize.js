@@ -22,10 +22,12 @@ javascript:(function(){
         $bar_container.css({
             'background': '#2e3d54',
             'padding': '10px',
-            'color': '#fff'
+            'color': '#fff',
+			'position': 'fixed',
+			'bottom': 0,
+			'z-index': 9999999
         });
 
-        $jira_columns_header.css('top', '172px');
         $('body').prepend($bar_container);
     },
 
